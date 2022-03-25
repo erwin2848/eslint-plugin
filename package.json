@@ -1,0 +1,16 @@
+{
+  "name": "@erwin-kort/eslint-plugin",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "eslintConfig": {
+    "extends": "plugin:@erwin-kort/base"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0"
+  },
+  "devDependencies": {
+    "@erwin-kort/eslint-plugin": "github:erwin-kort/eslint-plugin",
+    "@types/eslint": "^8.4.1"
+  }
+}
