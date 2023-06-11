@@ -7,10 +7,11 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0"
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint-plugin-astro": "^0.27.1"
   },
   "devDependencies": {
-    "@erwin-kort/eslint-plugin": "github:erwin-kort/eslint-plugin",
+    "@erwin-kort/eslint-plugin": "file:.",
     "@types/eslint": "^8.4.1"
   }
 }
