@@ -18,6 +18,11 @@ exports.rules = {
             return
           }
 
+          // @ts-ignore
+          if (node.parent?.type == 'ExportNamedDeclaration') {
+            return
+          }
+
           if (node.loc) {
             let { start } = node.loc
             let end = { ...start, column: start.column + 5 }
