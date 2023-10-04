@@ -5,10 +5,11 @@
   "eslintConfig": {
     "extends": "plugin:@erwin-kort/base"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
-    "eslint-plugin-astro": "^0.27.1"
+    "astro": "^3.2.2",
+    "eslint-plugin-astro": "^0.27.2"
   },
   "devDependencies": {
     "@erwin-kort/eslint-plugin": "file:.",

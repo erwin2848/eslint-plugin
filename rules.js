@@ -24,7 +24,7 @@ exports.rules = {
           }
 
           // @ts-ignore
-          if (node.parent?.type == 'Program') {
+          if (!node.parent?.parent) {
             return
           }
 

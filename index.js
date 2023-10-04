@@ -15,7 +15,9 @@ module.exports = plugin = {
           'files': [ '*.astro' ],
           'parser': 'astro-eslint-parser',
           'parserOptions': {
-            'parser': '@typecript-eslint/parser',
+            'parser': '@typescript-eslint/parser',
+            'ecmaVersion': 'latest',
+            'sourceType': 'module',
             'extraFileExtensions': [ '.astro' ],
           },
         },
@@ -27,6 +29,7 @@ module.exports = plugin = {
       },
       'plugins': [
         '@typescript-eslint',
+        'astro',
         '@erwin-kort',
       ],
       'rules': {
