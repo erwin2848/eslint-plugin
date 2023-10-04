@@ -23,6 +23,11 @@ exports.rules = {
             return
           }
 
+          // @ts-ignore
+          if (node.parent?.type == 'Program') {
+            return
+          }
+
           if (node.loc) {
             let { start } = node.loc
             let end = { ...start, column: start.column + 5 }
