@@ -10,18 +10,6 @@ module.exports = plugin = {
   rules: require('./rules').rules,
   configs: {
     'base': {
-      'overrides': [
-        {
-          'files': [ '*.astro' ],
-          'parser': 'astro-eslint-parser',
-          'parserOptions': {
-            'parser': '@typescript-eslint/parser',
-            'ecmaVersion': 'latest',
-            'sourceType': 'module',
-            'extraFileExtensions': [ '.astro' ],
-          },
-        },
-      ],
       'parser': '@typescript-eslint/parser',
       'parserOptions': {
         'ecmaVersion': 'latest',
@@ -29,11 +17,10 @@ module.exports = plugin = {
       },
       'plugins': [
         '@typescript-eslint',
-        'astro',
-        '@erwin-kort',
+        '@erwin2848',
       ],
       'rules': {
-        '@erwin-kort/no-const': 'error',
+        '@erwin2848/no-const': 'error',
         'indent': [ 'error', 2 ],
         'linebreak-style': [ 'error', 'unix' ],
         'quotes': [ 'error', 'single' ],

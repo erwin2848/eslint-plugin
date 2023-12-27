@@ -7,9 +7,7 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "astro": "^3.2.2",
-    "eslint-plugin-astro": "^0.27.2"
+    "@typescript-eslint/parser": "^5.26.0"
   },
   "devDependencies": {
     "@erwin2848/eslint-plugin": "file:.",
